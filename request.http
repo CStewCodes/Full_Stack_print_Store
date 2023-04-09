@@ -1,0 +1,32 @@
+###
+GET http://localhost:3000/customers
+
+###
+GET http://localhost:3000/products
+
+
+###
+GET http://localhost:3000/customers/1
+
+###
+POST http://localhost:3000/customers
+Content-Type: application/json
+
+{
+    "f_name": "Alex",
+    "email": "ima_bonehead@gmail.com"
+}
+
+###
+PATCH http://localhost:3000/customers/1
+Content-Type: application/json
+
+{
+    "f_name": "Justin",
+    "l_name": "Smith",
+    "email": "justin.smith@gmail.com"
+}
+
+###
+DELETE http://localhost:3000/customers/5
+
