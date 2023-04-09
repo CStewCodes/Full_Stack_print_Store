@@ -1,4 +1,4 @@
-fetch("http://127.0.0.1:3000/customers")
+fetch("https://print-store-backend.onrender.com/customers")
   .then((response) => response.json())
   .then((result) => console.log(result));
 
@@ -7,7 +7,7 @@ const searchButton = document.querySelector("#search-button");
 
 searchButton.addEventListener("click", () => {
   let textValue = textInput.value;
-  fetch(`http://127.0.0.1:3000/customers/${textValue}`)
+  fetch(`https://print-store-backend.onrender.com/customers/${textValue}`)
     .then((response) => response.json())
     .then((result) => {
       let newDiv = document.createElement("div");
